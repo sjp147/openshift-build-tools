@@ -1,0 +1,11 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "openshift-build-tools"
+spec:
+  source:
+    git:
+      uri: "https://github.com/sjp147/openshift-build-tools"
+strategy:
+  dockerStrategy:
+    dockerfilePath: Dockerfile
